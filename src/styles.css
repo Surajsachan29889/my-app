@@ -271,7 +271,7 @@
   }
 .react-logo{
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  border: 4px double black;
+  border: 6px double black;
   animation: liquid 2s ease-in-out infinite alternate;
   height:50%;
   width: 50%;
