@@ -1,0 +1,831 @@
+/* scrollbar styles */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #919191;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #13eded;
+}
+/* ********************************************************************************************* */
+/* header   */
+.navbar {
+  background-color: white;
+  position: sticky;
+  flex: 5;
+  top: 0%;
+  z-index: 1000;
+  box-shadow: rgba(69, 185, 185, 0.242) 0px 54px 55px,
+    rgba(130, 128, 128, 0.12) 0px -12px 30px, rgba(203, 201, 201, 0.12) 0px 4px 6px,
+    rgba(213, 210, 210, 0.17) 0px 12px 13px, rgba(224, 223, 223, 0.662) 0px -3px 5px;
+  
+}
+
+.brand {
+  font-family: 'Dancing Script', cursive;
+  font-size: xx-large !important;
+  font-weight: 900 !important;
+}
+
+.navbar svg {
+  padding-right: 7px !important;
+  padding-bottom: 5px !important;
+  font-size: xx-large !important;
+}
+
+.nav-items {
+  margin-left: 59% !important;
+}
+
+.nav-link i {
+  padding-right: 10px;
+  padding-top: 4px;
+}
+
+.nav-link {
+  padding-right: 20px !important;
+  padding-left: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+#basic-navbar-nav {
+  justify-content: center !important;
+  padding-right: 45px !important;
+}
+
+@media (min-width: 768px) {
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease;
+    bottom: 25%;
+  }
+
+  .nav-link:hover::after {
+    width: 5%;
+    height: 4px;
+    background-color: #00ffdd;
+  }
+  .navitem:hover {
+    color: #00ffdd !important;
+  }
+  .main-form{
+    position: absolute;
+  }
+}
+
+/* ******************************************************************** */
+/* hero */
+
+/* .homepage{
+  background-color:black;
+
+} */
+.hero-sec{
+  height: 60vh !important;
+}
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 150px;
+  z-index: 999;
+  margin-top: 100px;
+}
+
+.background {
+  position: relative;
+  overflow: hidden;
+  background-color: #11998e;
+}
+
+@media (max-width: 800px) {
+  .hero-grid {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 100px;
+    position: relative;
+  }
+
+  .hero-title {
+    margin-left: 3% !important;
+    font-size: 50px !important;
+  }
+
+  .changing-text {
+    left: 3% !important;
+    position: absolute !important;
+  }
+
+  .hero-para  {
+    position: absolute !important;
+    top: 50% !important;
+    left: 3% !important;
+  }
+  .hero-para p{
+    margin-top: 50% !important;
+  }
+
+  .skill-table {
+    position: absolute !important;
+    top: 250% !important;
+    margin: 0px !important;
+  }
+
+  
+
+  .react-logo{
+    height: 25vh !important;
+    width: 180% !important;
+    position: relative;
+    left: -180% !important;
+    top: 400px !important;
+  }
+  
+  .strip-container img {
+    position: relative;
+    top: 53%;
+  }
+
+  
+
+  .footer {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 30px;
+    height: 100% !important;
+  }
+  .footer .webtech {
+    height: 30% !important;
+  }
+  .foot-brand {
+    height: 30% !important;
+  }
+  .form
+  { 
+    flex-direction: column !important;
+    height: 100% !important;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .form-img{
+    margin-left: 18% !important;
+    
+  }
+  .main-form{
+    margin-top: 10%;
+    width: 50% !important;
+    margin-left: 18% !important;
+  }
+  .form-container .social{
+    margin-top: 15% !important;
+  }
+}
+
+.hero-title {
+  margin-left: 87px;
+  font-size: 80px;
+  font-weight: 900;
+  font-family: 'Rubik', sans-serif;
+}
+
+.changing-text {
+  height: 68px;
+  width: 510px;
+  overflow: hidden;
+  position: absolute;
+  left: 90px;
+}
+
+.changing-text h1 {
+  font-size: 50px;
+  font-family: 'Rubik', sans-serif;
+  color: rgb(19, 237, 237);
+}
+
+.hero-para {
+  height: 50px;
+  width: 500px;
+  font-family: 'Rubik', sans-serif;
+  position: absolute;
+  top: 50%;
+  color: grey;
+  left: 90px;
+}
+
+.skill-table {
+  display: grid;
+  grid-gap: 8px;
+  grid-template-columns: 130px auto;
+}
+
+.cpp {
+  background-color: rgb(175, 252, 252);
+  color: black !important;
+  width: 130px;
+}
+
+.python {
+  background-color: rgb(19, 237, 237);
+  color: white !important;
+  width: 130px;
+}
+
+.node {
+  background-color: rgb(0, 0, 0);
+  color: white !important;
+  width: 130px;
+}
+
+.js {
+  background-color: #dadada;
+  color: black !important;
+  width: 170px;
+}
+
+.skill-table h3 {
+  font-size: large !important;
+}
+
+.skill-table div {
+  font-family: 'Agdasima', sans-serif;
+  text-align: center;
+  border-radius: 8px;
+  padding-top: 5px;
+}
+
+.hero-image {
+  position: absolute;
+  left: 65%;
+  top: 30%;
+  width: 35%;
+  height: 70%;
+  
+  }
+.react-logo{
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  border: 4px double black;
+  animation: liquid 2s ease-in-out infinite alternate;
+  height:50%;
+  width: 50%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+  rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+  rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@keyframes liquid {
+  0% {
+      
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    }
+    100% {
+      
+      border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+    }
+}
+.logo {
+  border-radius: 50%;
+  box-shadow: inset;
+  position: absolute;
+  top: 33%;
+  right: 25%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* ************************************************************** */
+/* loading screen */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+.loading svg {
+  position: absolute;
+  width: 240px;
+  height: 120px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+svg #plug,
+svg #socket {
+  fill: #09e6e6;
+}
+
+svg #loop-normal {
+  fill: none;
+  stroke: #15fded;
+  stroke-width: 12;
+}
+
+svg #loop-offset {
+  display: none;
+}
+
+.credit {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.credit a {
+  color: #01f9c7;
+  font: 800 75% 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* ************************************************************* */
+/* strip css */
+.strip-container {
+  margin-top: 20px;
+  height: 150px;
+  overflow: hidden;
+  width: 100%;
+}
+/* ************************************************************** */
+
+/* mid styling */
+.mid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  position: relative;
+  overflow: hidden;
+}
+
+.mid-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url('back.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: translate3d(0, 0, 0);
+}
+
+.mid h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 150px;
+  height: 100px;
+}
+
+#mid-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: xx-large !important;
+  width: 500px;
+  text-align: center;
+}
+
+.mid p {
+  font-family: 'Oswald', sans-serif;
+  width: 70%;
+  color: rgb(69, 69, 69);
+}
+
+/* ********************************************** */
+/* social-stylings */
+.social {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 40vh;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1100;
+}
+
+.social ul {
+  position: relative;
+  display: flex;
+  gap: 25px;
+}
+
+.social ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+
+.social ul li:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0);
+  width: 180px;
+}
+
+.social ul li::before {
+  content: ' ';
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.social ul li:hover::before {
+  opacity: 1;
+}
+
+.social ul li::after {
+  content: ' ';
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  border-radius: 60px;
+  background: linear-gradient(45deg, var(--i), var(--j));
+  transition: 0.5s;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: 0;
+}
+
+.social ul li:hover::after {
+  opacity: 0.5;
+}
+
+.social ul li i {
+  color: var(--i);
+  font-size: 1.75rem;
+  transition: 0.5s;
+  transition-delay: 0.25s;
+}
+
+.social ul li:hover i {
+  transform: scale(0);
+  color: #fff;
+  transition-delay: 0s;
+}
+
+.social ul li span {
+  position: absolute;
+}
+
+.social ul li .social-title {
+  color: white;
+  font-size: 1.1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transform: scale(0);
+  transition: 0.5s;
+  transition-delay: 0s;
+}
+
+.social ul li:hover .social-title {
+  transform: scale(1);
+  transition-delay: 0.25s;
+}
+
+/* **************************************************
+ */
+/* Footer styling */
+
+.footer {
+  width: 100%;
+  margin: 0px;
+  height: 50%;
+  object-fit: cover;
+  align-items: center;
+  background-color: #01f9c7;
+  display: grid;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  color: rgb(216, 216, 216);
+  grid-template-columns: auto auto auto;
+}
+
+.webtech {
+  margin-left: 5%;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: larger;
+  font-size: smaller;
+  width: 57%;
+  height: 73%;
+}
+
+.webtech h1 {
+  font-size: 400%;
+  font-family: 'Oswald', sans-serif;
+}
+
+.foot-brand {
+  width: 50%;
+  height: 50%;
+  align-items: center;
+}
+
+.foot-nav {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.foot-nav ul {
+  list-style-type: none;
+}
+
+/* ************************************************************************************************** */
+/* form-styles */
+.form-container {
+    /* background-color: #2f302e; Replace with your desired background color */
+    /* background-image: url("form-back.png");
+    background-size: cover;*/
+    min-height: 100vh; 
+    background-color: #2B2A2A;
+  }
+
+.form{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-img {
+  height: 110%;
+  display: flex;
+  justify-content: center; 
+  margin-right:20%;
+}
+.form-img svg{
+  padding-top: 18%;
+  width: 80%;
+  height: 80%;
+}
+.main-form{
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #3e3e3e;
+    width: 30%;
+    box-shadow: rgba(69, 185, 185, 0.242) 0px 54px 55px,
+    rgba(69, 185, 185, 0.242) 0px -12px 30px, rgba(69, 185, 185, 0.242) 0px 4px 6px,
+    rgba(69, 185, 185, 0.242) 0px 12px 13px, rgba(69, 185, 185, 0.242) 0px -3px 5px;
+    position: relative;
+    right: 10%;
+    z-index: 100;
+}
+/* Variable Declarations */
+:root {
+    --primary: #11998e;
+    --secondary: #38ef7d;
+    --white: #fff;
+    --gray: #9b9b9b;
+  }
+  
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid var(--gray);
+    outline: 0;
+    font-size: 1.3rem;
+    color: var(--white);
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--gray);
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, var(--primary), var(--secondary));
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 700;
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
+  :root {
+    --bg: #f3f8fa;
+    --white: #fff;
+    --black: #31ea8e;
+  }
+  
+  button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  
+  button.learn-more {
+    width: 12rem;
+    height: auto;
+    overflow: hidden; /* Add this to hide the overflowing content */
+  }
+  
+  button.learn-more .circle {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: var(--black);
+    border-radius: 1.625rem;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    transform-origin: right center; /* Adjust the transform-origin */
+    overflow: hidden; /* Add this to hide the pseudo-element overflowing */
+  }
+  
+  button.learn-more .circle::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0; /* Move the pseudo-element to the right */
+    width: 0; /* Initially, hide the pseudo-element with width 0 */
+    height: 100%; /* Set its height to 100% of the circle */
+    background-color: var(--black);
+    transform-origin: left center; /* Set the transform origin to the left side */
+    transform: scaleX(0); /* Initially, hide the pseudo-element with scale */
+    transition: width 0.3s ease; /* Add a smooth transition on width */
+  }
+  
+  button.learn-more:hover .circle::before {
+    width: 100%; /* Increase the width on the right side on hover */
+  }
+  
+  button.learn-more .circle .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: var(--white);
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  }
+  
+  button.learn-more .circle .icon.arrow {
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+  }
+  
+  button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: '';
+    top: -0.25rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid var(--white);
+    border-right: 0.125rem solid var(--white);
+    transform: rotate(45deg);
+  }
+  
+  button.learn-more .button-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  }
+  
+  button.learn-more:hover .circle {
+    width: 12rem; /* Adjust the width as per your needs */
+  }
+  
+  button.learn-more:hover .circle .icon.arrow {
+    background: var(--white);
+    transform: translate(1rem, 0);
+  }
+  
+  button.learn-more:hover .button-text {
+    color: var(--white);
+  }
+  
+  /* *************************************************** */
+  /* main contact */
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
+:root{
+  --primary-color:#31ea8e;
+}
+.MainContact-container{    
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;   
+}
+.contact-title{
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  width: 20%;
+  font-family: 'Kanit', sans-serif;
+}
+.contact-title span{
+  background-color: var(--primary-color);
+  padding: 1%;
+  color: whitesmoke;
+}
+.mainform {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 90%;
+}
+.mainform p{
+    font-size: 2vw;
+    font-weight: 900;
+    font-family: 'Bricolage Grotesque', sans-serif;  
+}
+.mainform input::placeholder{
+    text-align: center;
+    opacity: .2;
+}
+.mainform input{
+  text-align: center;
+  border-width: 0 0 3px;
+  outline: none;
+  transition: .5s;
+  animation-name: input;
+ 
+}
+.mainform input:focus{
+  border-bottom:3px solid var(--primary-color);
+}

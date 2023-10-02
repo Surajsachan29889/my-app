@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+.hero-certificate{
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.certi-svg svg{
+    margin-left: 15%;
+    height:55%;
+    width: 55%;
+}
+.title-certi h1{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 3vw;
+    color: #2F2E41;
+    margin-right: 15%;
+}
+.title-certi{
+    margin-right: 6%;
+}
+.title-certi span{
+    color: #009C87;
+}
+.title-certi p{
+    font-size: 1.4vw;
+    font-weight: bolder;
+    font-family: 'Philosopher', sans-serif;
+
+}
+/* ***************************** */
+/* certisection styles */
+.certi-container{
+    margin-top: 18%;
+    height: 100%;
+}
+.section-title h1 span{
+    color: #009C87;
+}
+.section-title h1{
+    font-family: 'Philosopher', sans-serif;
+
+}
+.section-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.certi-container hr{
+    width: 7px; 
+  height: 250vh; 
+  background-color: black;
+  position: absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+}
+.showcase{
+    height: 100%;
+}
+.psitcard{
+    border-radius: 10px;
+    padding-top: 2%;
+    padding-left: 3%;
+
+    color: rgb(41, 41, 41);
+    font-family: 'Philosopher', sans-serif;
+    background-color: #DDB4FF;
+    position: absolute;
+    margin-top:10% ;
+    left: 10%;
+    height: 32vh;
+    width: 35%;
+    box-shadow: rgba(69, 185, 185, 0.242) 0px 54px 55px,
+    rgba(69, 185, 185, 0.242) 0px -12px 30px, rgba(69, 185, 185, 0.242) 0px 4px 6px,
+    rgba(69, 185, 185, 0.242) 0px 12px 13px, rgba(69, 185, 185, 0.242) 0px -3px 5px;
+}
+.psitcontent p{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.circle1{
+    position: absolute;
+    margin-top: 12%;
+    left: 49.3%;
+    width: 1.5%;
+    height: 3%;
+    background-color: #DDB4FF ;
+    border-radius: 50%;
+}
+.arrow1{
+    position: absolute;
+    z-index: -1;
+    left: 45%;
+    margin-top: 12%;
+    clip-path: polygon(100% 50%, 0 0, 0 100%);
+    width: 1.5%;
+    background-color: #a9b8b6;
+}
+#circle2{
+    margin-top: 43%;
+    background-color: purple;
+}
+#arrow2{
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+    margin-top: 43%;
+    left: 53.5%;
+}
+.psitcontent{
+    
+    width: 30%;
+    overflow: hidden;
+    position: absolute;
+    right: 15%;
+    margin-top: 13%;
+    font-family: 'Philosopher', sans-serif;
+}
+.certificatefsd img{
+    width: 100%;
+    height: 100%;
+}
+.certificatefsd{
+    position: absolute;
+    border-radius: 10px;
+    border:8px solid purple;
+    width: 35%;
+    height: 44vh;
+    right: 10%;
+    margin-top: 40%;
+    box-shadow: rgba(69, 185, 185, 0.242) 0px 54px 55px,
+    rgba(69, 185, 185, 0.242) 0px -12px 30px, rgba(69, 185, 185, 0.242) 0px 4px 6px,
+    rgba(69, 185, 185, 0.242) 0px 12px 13px, rgba(69, 185, 185, 0.242) 0px -3px 5px;
+}
+.fsdcontent span{
+    color: purple;
+}
+.fsdcontent{
+    overflow: hidden;
+    text-align: right;
+    font-family: 'Philosopher', sans-serif;
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    margin-top: 45%;
+}
+.fsdcontent h5{
+    font-size: 2.2vw;
+}
+.fsdcontent h3{
+    font-size: 2.3vw;
+}
+.fsdcontent h2{
+    font-size: 2.3vw;
+}
+#ML{
+    left: 10%;
+    margin-top: 80%;
+    border-color:#62C7F3 ;
+}
+#MLcontent span{
+    color: #62C7F3;
+}
+#MLcontent{
+    text-align: left;
+    left: 55%;
+    margin-top: 85%;
+}
+#circle3{
+    margin-top: 83%;
+    background-color: #62C7F3;
+}
+#arrow3{
+    margin-top: 83%;
+}
+
+
+
+@media (max-width: 800px) {
+    .title-certi{
+        text-align: center;
+        margin-left: 5%;
+    }
+    .title-certi h1{
+        padding-left: 10% !important;
+        font-size: 4rem !important;
+    }
+    .title-certi p{
+        font-size: 1.5rem !important;
+    }
+    .hero-certificate{
+        gap: 50px;
+        height: 100vh !important;
+        flex-direction: column-reverse !important;
+    }
+    .certi-svg svg{
+        padding-right: 15% !important;
+        height:95% !important;
+        width: 95% !important;
+    }
+    .psitcontent p{
+
+        font-size: 1rem !important;
+    }
+    .psitcard{
+        height: 25% !important;
+    }
+    .circle1{
+        left: 48.8%;
+        width: 2.5% !important;
+        height: 1.5% !important;
+    }
+    .certificatefsd{
+        height: 20vh;
+        margin-top: 85% !important;
+    }
+    
+    .fsdcontent{
+        margin-top: 90% !important;
+    }
+    #ML{
+        margin-top: 160% !important;
+    }
+    #MLcontent{
+        
+        margin-top: 165% !important;
+    }
+    #circle2 , #arrow2{
+        margin-top: 90% !important;
+    }
+    #circle3 , #arrow3{
+        margin-top: 165% !important;
+    }
+}
+/* ****************************** */
+/* new contact */
