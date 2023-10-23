@@ -7,7 +7,7 @@ function ProCard() {
   const [data, setData] = useState([]);
   useEffect(() => {
     // Make a GET request to fetch the data from the backend API
-    axios.get('http://localhost:1000/api/data')
+    axios.get('http://3.6.15.101:1000/api/data')
       .then(response => {
         setData(response.data);
       })
@@ -29,7 +29,7 @@ function ProCard() {
             <Button variant="primary" href={item.gitlink} target="_blank" >
               <i className="fa-brands fa-github"></i>GitHub
             </Button>
-            <Button variant="primary" href="http://16.170.205.2:9000/homepage" target="_blank" >
+            <Button variant="primary" href="http://3.6.15.101:9000/homepage" target="_blank" >
               <i className="fa-solid fa-link"></i>Visit
             </Button>
           </Card.Body>
