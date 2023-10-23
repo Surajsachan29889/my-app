@@ -6,8 +6,7 @@ import axios from 'axios';
 function ProCard() {
   const [data, setData] = useState([]);
   useEffect(() => {
-    // Make a GET request to fetch the data from the backend API
-    axios.get('http://3.6.15.101:1000/api/data')
+    axios.get('https://3.6.15.101:1000/api/data')
       .then(response => {
         setData(response.data);
       })
